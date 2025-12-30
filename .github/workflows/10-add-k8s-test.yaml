@@ -58,6 +58,7 @@ jobs:
             --no-lb
             --k3s-arg "--no-deploy=traefik,servicelb,metrics-server@server:*"
       
+            
       - name: Smoke test deployment in k3d Kubernetes
         run: |
           kubectl create secret docker-registry regcred \
